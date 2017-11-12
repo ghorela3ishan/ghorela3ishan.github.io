@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function add(){
+			var val= document.getElementById("todoin").value;
+			document.getElementById("todoin").value="";
+			var app=document.getElementById("todo").innerHTML;
+			document.getElementById("todo").innerHTML=app+"<li>"+val+"<div style='display: inline;' onclick='del(this);'>&nbsp;	x</div></li>";
+	
+
+		}
+		function del(ob){
+			var a=ob.parentElement.innerHTML;
+			var app=document.getElementById("comptodo").innerHTML;
+			document.getElementById("comptodo").innerHTML=app+"<li style='background-color:yellow;text-decoration:line-through'>"+a+"</li>";
+			ob.parentElement.remove();
+
+		}
+	</script>
+</head>
+<body>
+<!--to do list start -->
+<h1>To Do List</h1>
+	<ul id="todo">
+		<!--<li>val <div style='display: inline;' onclick='del(this);'>x</div><li>-->
+	</ul>
+	<br>
+<!--to do list end -->
+
+<!--create section start-->
+Create To Do<input type="text" id="todoin" name="enter to do">
+			<button value="SUBMIT" onclick="add();">SUBMIT</button>
+<!--create section end -->
+
+<!--complete section start -->
+<h1>Completed To Do </h1>
+	
+	<ul id="comptodo">
+
+	</ul>
+	
+<!--complete section end-->
+	
+</body>
+</html>
