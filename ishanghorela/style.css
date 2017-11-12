@@ -1,0 +1,155 @@
+@CHARSET "ISO-8859-1";
+body{
+    background-color:#f2f2f2;
+	margin-top: 7%;
+}
+
+.hoone{
+	margin-top:2%;
+	color:#E65C00;
+	text-align: center;
+	-webkit-animation-duration:500ms;
+	-moz-animation-duration:500ms;
+	-webkit-animation-delay:1900ms;
+	-moz-animation-delay:1900ms;
+	-webkit-animation-iteration-count:1;
+	-moz-animation-iteration-count:1;
+	font-family: "Palatino Linotype",Monospace;
+    font-weight:lighter;
+    font-size: 40px;	
+}
+
+.hotwo{
+	-webkit-animation-duration:1200mss;
+	-moz-animation-duration:1200mss;
+	-webkit-animation-delay:700ms;
+	-moz-animation-delay:700ms;
+	-webkit-animation-iteration-count:1;
+	-moz-animation-iteration-count:1;
+	
+}
+
+.contaext{
+	margin-top:4%;
+	text-align: center;
+}
+
+.cobox{
+	color: 	#DD4B39; 	
+	text-align: center;
+	margin-top: 4%;
+	border-style:solid;
+	border-color:gray;
+	box-shadow: 7px 7px 7px  gray; 
+	background-color: white;
+}
+.cobox2{
+	color:#288233;
+	text-align: center;
+	margin-top: 4%;
+	border-style:solid;
+	border-color:gray;
+	box-shadow: 7px 7px 7px  gray; 
+	background-color: white;
+}
+
+
+.conlink{
+	color: black;
+}
+
+.maps{
+	margin-top:2%;
+	height:300px;
+	width:100%;
+	background-color:white;
+}
+
+.kavired{
+	color: #F44336;
+}
+
+.crone{
+	color:white;
+	text-align: center;
+	background-color: #E65C00;
+	font-size: 15px;
+}
+
+.mainone{
+	color: #E65C00;
+	border: 25px;
+	border-color:#E65C00; 
+}
+.conone{
+	background-color: #D8D8D8;
+    
+}
+.skone{
+	background-color:#D8D8D8;
+	opacity:.9;
+	background-color: black;
+	color:#E65C00;
+}
+.skonet{
+	-webkit-animation-delay:800ms;
+	-moz-animation-delay:800ms;
+}
+.skthr{
+	opacity:1;
+	font-weight: bolder;
+}
+.sktwo{
+	
+	width: 49.5%;
+}
+.abtwo{
+	background-color:white;
+}
+.abover{
+    transform: rotate(-360deg );
+    transition: transform 2600ms ease;	
+}
+
+.about{
+	   transform: rotate( 360deg );
+       transition: transform 400ms ease;
+}
+.proone{
+	text-align: center;
+	font-size:500%;
+}
+.protwo{
+	font-size: 150%;
+	text-align:center;
+	color: gray;
+	
+}
+.proth{
+   margin-left: 30%;	
+}
+.profi{
+	-webkit-animation-delay:800ms;
+	-moz-animation-delay:800ms;
+}
+.h2one{
+	text-align: center;
+    border-bottom: 1px;
+    border-bottom-style:groove;
+}
+.h2three{
+	color: gray;
+	border-bottom: 1px;
+    border-bottom-style:groove;
+}
+.ptwo{
+	text-align: center;
+    display: block;
+}
+.pthree{
+	text-align: center;
+	display: block;
+}
+.profo{
+	-webkit-animation-delay:800ms;
+}
