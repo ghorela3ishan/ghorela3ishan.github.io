@@ -1,5 +1,4 @@
 function select(ob){
-	alert("hello");
 	var a=ob.innerHTML;
 	window.location.href="cart.html";		
 	localStorage.setItem("x",a);
