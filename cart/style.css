@@ -1,0 +1,19 @@
+.elem{
+	float: left;
+	width: 30%;
+	display: inline;
+	border-color:#BF8376;
+	border-style: solid;
+	margin: 1%;
+
+}
+.info{
+	text-align: center;
+}
+.im{
+	margin-left: 30%;
+	margin-top: 2%;
+}
+.price{
+	align-self: center;
+}
