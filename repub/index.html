@@ -1,95 +1,90 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<meta charset="utf-8">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<style>
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
-.cd{
-  background-color:#82E0AA;
-  border-color:#D5F5E3;
-  text-align: center;
-  font-size: 200px;
-  font-family: 'Poppins', sans-serif;
-  margin:4px;
-  
-}
+    <title>Hello, world!</title>
+    <style>
+        .cd{
+            background-color:#82E0AA;
+            border-color:#D5F5E3;
+            text-align: center;
+            font-size:50px;
+            font-family: 'Poppins', sans-serif;
+            margin:4px;
+        }
+        .wish{
+            text-align: center;
+        }  
 
+    </style>
+    <script>
+        var x = setInterval(function() {
+            var d = new Date();
+            var da=26-d.getDate();
+            var h=23-d.getHours();
+            var m=60-d.getMinutes();
+            var s=60-d.getSeconds();
+            document.getElementById("days").innerHTML = da+":"+h+":"+m+":"+s;
+            //check functionality
+                /*if (da == 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "EXPIRED";
+                }*/
+                
+        }, 100);
 
-.wish{
-    text-align: center;
-    font-size:70;
-    }  
+        function generate(){
+            var name=document.getElementById("input").value;
+            var url= new URL("file:///root/repub/index.html");
+            var link=url+"/?name="+name;
+            document.getElementById("anch").href=link;
+            document.getElementById("anch").innerHTML=link;
+        }
+    </script>
 
-</style>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-</head>
-<body>
-<div class="container-fluid">
-    <div class="row" style="background-color:#F0F3F4;border-radius:2px;">
-        
-        
-        <div class="col-md-12 cd" id="days">
-        
+  </head>
+  <body>
+    <div class=""container-fluid>
+        <div class="row" style="background-color:#F0F3F4;border-radius:2px;">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4 cd">
+                <p id="days"></p>
+            </div>
+            <div class="col-md-4">
+            </div>
         </div>
-       
         
+        <div class="row">
+            <div class="col-md-12 wish">
+                <p style="font-family: 'Poppins', sans-serif;">गणतंत्र दिवस की हार्दिक शुभकामनाएं!</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+                <img src="im.bin" class="img-fluid" align="center" alt="Responsive image">
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div>
+
     </div>
-   
     
-    <div class="row">
-    <div class="col-md-12 wish">
-        <p style="font-family: 'Poppins', sans-serif;">गणतंत्र दिवस की हार्दिक शुभकामनाएं!</p>
-    </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-4">
-        </div>
-        <div class="col-md-4">
-            <img src="img.bin" class="img-fluid" align="center" alt="Responsive image">
-        </div>
-        <div class="col-md-4">
-        </div>
-    </div>
-</div>
-<!--<div class="container">
-<p>Wish your friends</p>
-Enter your name: <input id="input" type="text"/>
-<button type="button" class="btn btn-primary" onclick="generate()">Get Link</button>
-<a href="img.bin" id="anch" />
-</div>-->
-
-
-<script>
-var x = setInterval(function() {
-var d = new Date();
-var da=26-d.getDate();
-var h=23-d.getHours();
-var m=60-d.getMinutes();
-var s=60-d.getSeconds();
-document.getElementById("days").innerHTML = da+":"+h+":"+m+":"+s;
-//check functionality
-    /*if (da == 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-    }*/
     
-}, 100);
-
-function generate(){
-var name=document.getElementById("input").value;
-var url= new URL("file:///root/repub/index.html");
-var link=url+"/?name="+name;
-document.getElementById("anch").href=link;
-document.getElementById("anch").innerHTML=link;
-}
-</script>
- 
-</body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  </body>
 </html>
